@@ -27,6 +27,7 @@ urldiff.rb -f [first_url] -s [second_url] [options]
 
 #### Options:
 
+    -i FILE read from CSV
     -c FILE append results to CSV
 
 #### Example:
