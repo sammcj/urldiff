@@ -10,6 +10,11 @@ require 'csv'
 require 'wkhtmltoimg_binary'
 include ChunkyPNG::Color
 
+if ARGV.empty?
+  puts 'hint: use -h for help'
+  exit
+end
+
 # Take option
 options = {:first_url => nil, :second_url => nil, :keep_snaps => false, :output_cvs => nil, :input_csv => nil }
 
@@ -37,10 +42,6 @@ end
 
 optparse.parse!
 
-if ARGV.empty?
-  puts 'hint: use -h for help'
-  exit
-end
 
 # Read from CSV if enabled
 if !options[:input_csv]
