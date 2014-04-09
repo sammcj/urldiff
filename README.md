@@ -15,7 +15,7 @@ gem install oily_png imgkit
 
 ```bash
 # Debian / Ubuntu
-apt-get install wkhtmltopng
+apt-get install wkhtmltopdf
 ```
 
 OSX Binary available from: http://minimul.com/install-osx-wkhtmltoimage-binaries.html
