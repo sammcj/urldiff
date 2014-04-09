@@ -15,7 +15,6 @@ options = {:first_url => nil, :second_url => nil, :keep_snaps => false, :output_
 
 optparse = OptionParser.new do|opts|
   opts.banner = "Usage: urldiff.rb [options] -f URL1 -s URL2 ..."
-
   opts.on( '-f', '--first FIRST_URL', "First URL" ) do|first_url|
     options[:first_url] = first_url
   end
@@ -31,11 +30,17 @@ optparse = OptionParser.new do|opts|
   end
   opts.on( '-h', '--help', 'Display this screen' ) do
     puts opts
+    puts "","Example: urldiff.rb -i sites.csv -o output.csv"
     exit
   end
 end
 
 optparse.parse!
+
+if ARGV.empty?
+  puts 'hint: use -h for help'
+  exit
+end
 
 # Read from CSV if enabled
 if !options[:input_csv]
