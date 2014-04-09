@@ -4,6 +4,8 @@ Computes and displays the visual differences between two URLs
 
 urldiff takes two URLs, renders them as images and compairs them pixel by pixel outputs the visual difference in percentage between the two URLs and and generates a colour image of the differences.
 
+[![Gem Version](https://badge.fury.io/rb/urldiff.svg)](http://badge.fury.io/rb/urldiff)
+
 #### Install:
 
 ```
