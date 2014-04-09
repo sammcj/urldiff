@@ -39,7 +39,10 @@ optparse.parse!
 
 # Read from CSV if enabled
 if !options[:input_csv]
-    site_list = "#{first_url},#{second_url}"
+  File.open("site_list.csv", "w") do |f|
+    f.write "#{options[:first_url]},#{options[:second_url]}\n"
+  end
+  options[:site_list] = File.path("site_list.csv")
 end
 
 CSV.foreach(options[:site_list]) do |col|

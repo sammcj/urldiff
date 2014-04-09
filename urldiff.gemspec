@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = 'urldiff'
-  s.version     = '0.0.1'
+  s.version     = '0.0.3'
   s.date        = '2014-04-09'
-  s.summary     = "urldiff"
+  s.summary     = "Computes and displays the visual differences between two URLs"
   s.description = "Computes and displays the visual differences between two URLs"
   s.authors     = ["Sam McLeod"]
   s.email       = ''

@@ -4,11 +4,17 @@ Computes and displays the visual differences between two URLs
 
 urldiff takes two URLs, renders them as images and compairs them pixel by pixel outputs the visual difference in percentage between the two URLs and and generates a colour image of the differences.
 
+#### Install:
+
+```
+gem install urldiff
+```
+
 #### Requires:
 * Gems
 
 ```
-gem install oily_png imgkit wkhtmltoimg_binary
+gem install oily_png imgkit wkhtmltoimg_binary link-checker
 ```
 Tested on Ruby 2.1.0
 
