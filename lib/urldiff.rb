@@ -7,6 +7,7 @@ require 'imgkit'
 require 'tempfile'
 require 'optparse'
 require 'csv'
+require 'wkhtmltoimg_binary'
 include ChunkyPNG::Color
 
 # Take option
