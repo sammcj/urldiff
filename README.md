@@ -46,8 +46,8 @@ Generating DIFF-www.google.com.au-www.google.co.nz.png
 Appending output to output.csv
 
 # cat output.csv
-http://www.google.com vs http://www.google.co.nz,0.61220703125%
-http://www.google.com vs http://www.google.co.nz,0.61220703125%
+http://www.google.com,http://www.google.co.nz,0.61220703125%
+http://www.google.com,http://www.google.co.nz,0.61220703125%
 ```
 
 #### Screenshots:

@@ -98,7 +98,7 @@ CSV.foreach(options[:site_list]) do |col|
   if options[:output_csv]
     puts "Appending output to #{options[:output_csv]}",""
     File.open(options[:output_csv], "a") do |f|
-      f.write "#{first_url} vs #{second_url},#{(diff.length.to_f / images.first.pixels.length) * 100}%\n"
+      f.write "#{first_url},#{second_url},#{(diff.length.to_f / images.first.pixels.length) * 100}%\n"
     end
   end
 end
