@@ -21,7 +21,7 @@ optparse = OptionParser.new do|opts|
   opts.on( '-s', '--second SECOND_URL', "Second URL" ) do|second_url|
     options[:second_url] = second_url
   end
-  opts.on( '-c', '--output FILENAME', 'Generate csv (append)' ) do|output_csv|
+  opts.on( '-o', '--output FILENAME', 'Generate csv (append)' ) do|output_csv|
     options[:output_csv] = output_csv
   end
   opts.on( '-i', '--input FILENAME', 'Import csv site list' ) do|input_csv|
