@@ -22,13 +22,15 @@ OSX Binary available from: http://minimul.com/install-osx-wkhtmltoimage-binaries
 
 #### Usage:
 ```bash
-urldiff.rb -f [first_url] -s [second_url] [options]
+urldiff.rb -i sitelist.csv -o output.csv
 ```
 
 #### Options:
 
     -i FILE read from CSV
     -o FILE output (append) results to CSV
+    -f URL compare one site - First site
+    -s URL compare one site - Second site
 
 #### Example:
 ```bash
@@ -50,6 +52,11 @@ Appending output to output.csv
 
 # cat output.csv
 http://www.google.com,http://www.google.co.nz,0.61220703125%
+
+# ls *.png
+www.google.com.au.png
+www.google.co.nz.png
+DIFF-www.google.com.au-www.google.co.nz.png
 ```
 
 #### Screenshots:
