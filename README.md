@@ -16,7 +16,7 @@ gem install urldiff
 * Gems
 
 ```
-gem install oily_png imgkit wkhtmltoimg_binary link-checker
+gem install oily_png imgkit wkhtmltoimg_binary
 ```
 Tested on Ruby 2.1.0
 
