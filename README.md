@@ -8,17 +8,9 @@ urldiff takes two URLs, renders them as images and compairs them pixel by pixel 
 * Gems
 
 ```
-gem install oily_png imgkit
+gem install oily_png imgkit wkhtmltoimg_binary
 ```
-
-* wkhtmltoimage
-
-```bash
-# Debian / Ubuntu
-apt-get install wkhtmltopdf
-```
-
-OSX Binary available from: http://minimul.com/install-osx-wkhtmltoimage-binaries.html
+Tested on Ruby 2.1.0
 
 #### Usage:
 ```bash
