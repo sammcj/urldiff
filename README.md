@@ -22,11 +22,16 @@ OSX Binary available from: http://minimul.com/install-osx-wkhtmltoimage-binaries
 
 #### Usage:
 ```bash
-urldiff.rb [first_url] [second_url]
+urldiff.rb -f [first_url] -s [second_url] [options]
 ```
+
+#### Options:
+
+    -c FILE append results to CSV
+
 #### Example:
 ```bash
-# urldiff.rb http://www.google.com.au http://www.google.co.nz
+# urldiff.rb -f http://www.google.com.au -s http://www.google.co.nz -c output.csv
 
 Rendering http://www.google.com.au
 Rendering http://www.google.co.nz
@@ -36,6 +41,12 @@ pixels changed:     6269
 pixels changed (%): 0.61220703125%
 
 Generating DIFF-www.google.com.au-www.google.co.nz.png
+
+Appending output to output.csv
+
+# cat output.csv
+http://www.google.com vs http://www.google.co.nz,0.61220703125%
+http://www.google.com vs http://www.google.co.nz,0.61220703125%
 ```
 
 #### Screenshots:
